@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon API</title>
+    <link rel="icon" href="./assets/img/icono.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link href="./assets/css/styles.css" rel="stylesheet">
+
+<!--     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> --> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light navbar-expand-lg bg-transparent mb-3 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="./assets/img/navbar.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+                    <span>
+                    DigiSearch
+                    <!-- DARLE UN MARGIN PARA QUE NO SE VEA TAN PEGADO CON EL AGUMON -->    
+                    </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Buscar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carouselDigimon">Explorar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container">
+            <div class="d-flex justify-content-center mb-2">
+                <img class="customMargin" src="./assets/img/logo_principal.png" width="70%" alt="Logo Digimon">
+            </div>
+    </header>
+    
+    <main>
+    <h1 class="text-center mb-3">DigiSearch</h1>
+        <form class="d-flex justify-content-center align-items-center">
+            <div class="mb-3">
+                <label for="inputDigimon" class="form-label">Ingrese el Digimon que desea buscar por su nombre
+                </label>
+                <input type="text" class="form-control" id="inputDigimon" aria-describedby="emailHelp">
+            </div>
+                <button id="searchButton" type="submit" class="btn btn-success mx-3 mt-3">Buscar</button>
+        </form>
+    </main>
+
+    <div class="d-flex justify-content-center mb-2">
+        <img src="./assets/img/nier.png">
+    </div>
+
+    <div>
+        <h2 class="text-center" id="carouselDigimon">Explorar</h2>
+    </div>
+
+    <div class="d-flex justify-content-center mb-2">
+        <img src="./assets/img/fraux.png">
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
