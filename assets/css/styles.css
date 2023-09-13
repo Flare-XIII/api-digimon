@@ -5,22 +5,22 @@
     background: linear-gradient(90deg, rgba(255,194,50,1) 0%, rgba(245,255,0,1) 100%);
 }
 
-.customMargin{
+.customMargin {
     margin-top: 5rem;
     
 }
 
-body {
-    background-color: rgba(239, 238, 238, 0.93);
+.darkMode {
+    background-color: rgba(0, 3, 36, 0.684);
 }
 
-/* .h1 {
-    font-family: 'Quicksand', sans-serif;
-}
- */
-/* .footer {
+footer{
     border-top-left-radius : 10px;
 	border-top-right-radius: 10px;
     background: rgb(255,194,50);
     background: linear-gradient(90deg, rgba(255,194,50,1) 0%, rgba(245,255,0,1) 100%);
-} */
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+}
