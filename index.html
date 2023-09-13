@@ -27,7 +27,7 @@
         crossorigin="anonymous"></script>
 
     <!-- JS PROPIO -->
-    <script src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/script.js"></script>
 
 </head>
 
@@ -54,11 +54,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#registrarDigimon">Mis Digimon</a>
                     </li>
-                    <!-- ARREGLA ESTE BOTÓN-->
-                    <li>
-                        <button type="button" id="darkMode" class="btn bg-transparent" data-bs-toggle="button">Modo Oscuro</button>
-                    </li>
-                    <!-- AAAAAAAAAAAAAAAAAAAAAAAAA -->
                 </ul>
             </div>
         </div>
@@ -70,28 +65,25 @@
             </div>
     </header>
     
-    <main>
+    <main class="container">
     <h1 class="text-center mb-3">DigiSearch</h1>
-        <form class="d-flex justify-content-center align-items-center">
-            <div class="mb-3">
-                <label for="inputDigimon" class="form-label">Ingrese el Digimon que desea buscar por su nombre
-                </label>
-                <input type="text" class="form-control" id="inputDigimon" aria-describedby="emailHelp">
-            </div>
-            <button id="searchButton" type="submit" class="btn btn-success">Buscar</button>
-        </form>
-
-        <div class="row">
-            <div id="tarjeta" class="d-flex justify-content-center align-items-center">
-            </div>
-        </div>
-    </main>
-
     <section>
         <div>
             <h2 class="text-center" id="registrarDigimon">Listo de tus Digimons registrados</h2>
         </div>
     </section>
+        <form class="d-flex justify-content-center align-items-center">
+            <div class="mb-3">
+                <label for="inputDigimon" class="form-label">Ingrese el Digimon que desea buscar por su nombre
+                </label>
+                <input type="text" class="form-control" id="inputDigimon">
+            </div>
+            <button id="searchButton" type="submit" class="btn btn-success">Buscar</button>
+        </form>
+
+        <div class="row d-flex justify-content-center align-items-center" id="cardSuccess">
+        </div>
+    </main>
 
     <footer class="py-1">
         <div class="d-flex justify-content-center">

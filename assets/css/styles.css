@@ -1,3 +1,11 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+h5{
+    font-weight: bold;
+}
+
 .navbar {
     border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -10,17 +18,9 @@
     
 }
 
-.darkMode {
-    background-color: rgba(0, 3, 36, 0.684);
-}
-
 footer{
     border-top-left-radius : 10px;
 	border-top-right-radius: 10px;
     background: rgb(255,194,50);
     background: linear-gradient(90deg, rgba(255,194,50,1) 0%, rgba(245,255,0,1) 100%);
-}
-
-h1 {
-    font-family: 'Quicksand', sans-serif;
 }
