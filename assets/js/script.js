@@ -7,7 +7,7 @@ let card = document.getElementById('cardSuccess')
 function showCard (digimon) {
     let digimonCard = `
     <div class="card" style="width: 18rem;">
-        <img src="${digimon.img}" class="card-img-top" alt="./assets/img/noDigimon.png">
+        <img src="${digimon.img}" class="card-img-top rounded" alt="./assets/img/noDigimon.png">
         <div class="card-body">
             <h5 class="card-title">${digimon.name}</h5>
             <p class="card-text">${digimon.level}</p>
@@ -35,19 +35,35 @@ function getAllDigimon () {
             card += `
             <div class = "col-xl-3 col-lg-4 mb-4 mb-md-3 col-md-6 col-sm-12"
             <div class="card" style="width: 18rem;">
-            <img src="${oneDigimon.img}" class="card-img-top" alt="...">
+            <img src="${oneDigimon.img}" class="card-img-top rounded" alt="...">
             <div class="card-body">
             <h5 class="card-title">${oneDigimon.name}</h5>
-            <button type="button" class="btn btn-primary">Primary</button>
             </div>
             </div>
             </div>
             `
-
             cardSuccess.innerHTML = card
         })
     })
-} 
+}
 
 getAllDigimon()
 getOneDigimon()
+
+const darkMode = function() {
+    document.querySelector("body").setAttribute("data-bs-theme", "dark");
+    document.querySelector("#dl-icon").setAttribute("class", "bi bi-sun-fill blackFont");
+}
+
+const defaultMode = function() {
+    document.querySelector("body").setAttribute("data-bs-theme", "light");
+    document.querySelector("#dl-icon").setAttribute("class", "bi bi-moon-fill");
+}
+
+const changeTheme = function() {
+    if (document.querySelector("body").getAttribute("data-bs-theme") === "light") {
+        darkMode();
+    } else {
+        defaultMode();
+    }
+}

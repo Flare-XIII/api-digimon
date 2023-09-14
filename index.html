@@ -31,28 +31,32 @@
 
 </head>
 
-<body>
+<body data-bs-theme="light">
 
     <nav class="navbar navbar-light navbar-expand-lg bg-transparent mb-3 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="">
-                <img src="./assets/img/navbar.png" alt="Logo" width="30" class="d-inline-block align-text-top">
-                    <span>
+                <img src="./assets/img/navBar.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+                    <span class="blackFont">
                     DigiSearch
                     <!-- DARLE UN MARGIN PARA QUE NO SE VEA TAN PEGADO CON EL AGUMON -->    
                     </span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler blackBorder" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Buscar</a>
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <span class="blackFont">
+                            Buscar
+                            </span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#registrarDigimon">Mis Digimon</a>
+                        <button onclick="changeTheme()" class="btn rounded-fill"><i id="dl-icon" class="bi bi-moon-fill"></i></button>
                     </li>
                 </ul>
             </div>
@@ -61,35 +65,28 @@
 
     <header class="container">
             <div class="d-flex justify-content-center mb-2">
-                <img class="customMargin" src="./assets/img/logo_principal.png" width="60%" alt="Logo Digimon">
+                <img class="customMargin" src="./assets/img/logoPrincipal.png" width="60%" alt="Logo Digimon">
             </div>
     </header>
     
     <main class="container">
     <h1 class="text-center mb-3">DigiSearch</h1>
-    <section>
-        <div>
-            <h2 class="text-center" id="registrarDigimon">Listo de tus Digimons registrados</h2>
-        </div>
-    </section>
         <form class="d-flex justify-content-center align-items-center">
             <div class="mb-3">
                 <label for="inputDigimon" class="form-label">Ingrese el Digimon que desea buscar por su nombre
                 </label>
                 <input type="text" class="form-control" id="inputDigimon">
-            </div>
-            <button id="searchButton" type="submit" class="btn btn-success">Buscar</button>
+                <button id="searchButton" type="submit" class="btn btn-success mx-auto d-block mt-2">Buscar</button>
+            </div>          
         </form>
-
-        <div class="row d-flex justify-content-center align-items-center" id="cardSuccess">
-        </div>
+    <div class="row d-flex justify-content-center align-items-center" id="cardSuccess">
+    </div>
     </main>
 
-    <footer class="py-1">
+    <footer class="py-1 blackFont mt-3">
         <div class="d-flex justify-content-center">
             <a href="https://github.com/Flare-XIII" target="_blank"><i class="bi bi-github"></i></a>
         </div>
-        
         <p class="text-center">Sitio web desarrollado por Flare-XII</p>
         <p class="text-center">2023</p>
     </footer>
