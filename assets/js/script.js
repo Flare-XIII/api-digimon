@@ -7,7 +7,7 @@ let card = document.getElementById('cardSuccess')
 function showCard (digimon) {
     let digimonCard = `
     <div class="card" style="width: 18rem;">
-        <img src="${digimon.img}" class="card-img-top rounded" alt="./assets/img/noDigimon.png">
+        <img src="${digimon.img}" class="card-img-top rounded" alt="img digimon">
         <div class="card-body">
             <h5 class="card-title">${digimon.name}</h5>
             <p class="card-text">${digimon.level}</p>
@@ -35,7 +35,7 @@ function getAllDigimon () {
             card += `
             <div class = "col-xl-3 col-lg-4 mb-4 mb-md-3 col-md-6 col-sm-12"
             <div class="card" style="width: 18rem;">
-            <img src="${oneDigimon.img}" class="card-img-top rounded" alt="...">
+            <img src="${oneDigimon.img}" class="card-img-top rounded" alt="img digimon">
             <div class="card-body">
             <h5 class="card-title">${oneDigimon.name}</h5>
             </div>
